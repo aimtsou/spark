@@ -35,7 +35,7 @@ from typing import (
     TYPE_CHECKING,
     Union,
 )
-from typing.io import BinaryIO  # type: ignore[import]
+from typing import BinaryIO
 
 from pyspark.java_gateway import local_connect_and_auth
 from pyspark.serializers import ChunkedStream, pickle_protocol
