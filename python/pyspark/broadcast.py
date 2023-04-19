@@ -94,7 +94,7 @@ class Broadcast(Generic[T]):
         ...
 
     @overload  # On worker with decryption server
-    def __init__(self: "Broadcast[Any]", *, sock_file: str):
+    def __init__(self: "Broadcast[Any]", *, path: str, sock_file: str):
         ...
 
     def __init__(
